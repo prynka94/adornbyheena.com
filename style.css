@@ -71,12 +71,12 @@ footer {
 }
 
 
-/* ===== Vertical Scrolling Reviews ===== */
+/* ===== Vertical Scrolling Reviews (Plain Text) ===== */
 .scroll-reviews-vertical {
   overflow: hidden;
-  height: 200px; /* Adjust to your preferred visible height */
+  height: 180px; /* Adjust to control visible area */
   position: relative;
-  background-color: #fff3e0;
+  background-color: #fffaf5;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -89,28 +89,23 @@ footer {
   animation: scrollUp 25s linear infinite;
 }
 
-.review-item {
-  background: white;
+.review-text {
   color: #5a3e1b;
   font-style: italic;
   font-weight: 500;
-  border-radius: 12px;
-  padding: 1rem 1.5rem;
-  margin: 8px 0;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  width: 80%;
-  max-width: 600px;
+  font-size: 1rem;
+  margin: 10px 0;
   text-align: center;
-  flex-shrink: 0;
+  opacity: 0.9;
 }
 
-/* Animation for continuous upward scroll */
+/* Continuous upward motion */
 @keyframes scrollUp {
   0% { transform: translateY(0); }
   100% { transform: translateY(-50%); }
 }
 
-/* Optional: Pause on hover for readability */
+/* Optional: Pause scrolling when hovered */
 .scroll-reviews-vertical:hover .reviews-track-vertical {
   animation-play-state: paused;
 }
